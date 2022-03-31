@@ -36,6 +36,8 @@
   height: 56px;
   min-width: 640px;
   flex: 1 0 0;
+  z-index: 1;
+  position: relative;
 }
 
 .rightmenu {
@@ -55,6 +57,54 @@
 .centermenu li a span, .rightmenu li a span {
   margin: 0 8px;
   font-size: 14px;
+}
+
+/* ----- top nav animation ----- */
+.centermenu .animation {
+  position: absolute;
+  height: 32px;
+  width: 91px;
+  top: 12px;
+  left: 20px;
+  z-index: -1;
+  background: #7b7f88;
+  border-radius: 12px;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
+.start, li:nth-child(1):hover~.animation {
+  left: 20px;
+  opacity: 1;
+}
+
+.start, li:nth-child(2):hover~.animation {
+  left: 111px;
+  opacity: 1;
+}
+
+.start, li:nth-child(3):hover~.animation {
+  left: 202px;
+  width: 93px;
+  opacity: 1;
+}
+
+.start, li:nth-child(4):hover~.animation {
+  left: 295px;
+  width: 92px;
+  opacity: 1;
+}
+
+.start, li:nth-child(5):hover~.animation {
+  left: 387px;
+  width: 110px;
+  opacity: 1;
+}
+
+.start, li:nth-child(6):hover~.animation {
+  left: 497px;
+  width: 123px;
+  opacity: 1;
 }
 
 /* ----- side nav ----- */
