@@ -1,0 +1,79 @@
+/* ----- top navbar ----- */
+.topnavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 32px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.logo .logo-svg {
+  width: 120px;
+  height: 24px;
+}
+
+.logo a {
+  padding: 0 16px;
+  margin-top: 2px;
+}
+
+.centermenu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  /* padding-left: 72px; */
+  /* margin-left: 56px; */
+  height: 56px;
+  flex: 1 0 0;
+}
+
+.rightmenu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 32px;
+  height: 56px;
+  flex: 1 0 0;
+}
+
+.centermenu li a, .rightmenu li a {
+  padding: 4px 8px;
+}
+
+.centermenu li a span, .rightmenu li a span {
+  margin: 0 8px;
+  font-size: 14px;
+}
+
+/* ----- showcase ----- */
+.showcase {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase h1 {
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.showcase .showcase-badges {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+/* ----- second page ----- */
