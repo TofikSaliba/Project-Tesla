@@ -48,10 +48,13 @@
   padding-right: 32px;
   height: 56px;
   flex: 1 0 0;
+  z-index: 1;
+  position: relative;
 }
 
 .centermenu li a, .rightmenu li a {
   padding: 4px 8px;
+  flex: 4 0 100px;
 }
 
 .centermenu li a span, .rightmenu li a span {
@@ -59,7 +62,7 @@
   font-size: 14px;
 }
 
-/* ----- top nav animation ----- */
+/* ----- top nav animation center ----- */
 .centermenu .animation {
   position: absolute;
   height: 32px;
@@ -70,6 +73,7 @@
   background: #7b7f88;
   border-radius: 12px;
   transition: all 0.2s ease-in;
+  transition-delay: 0.15s;
   opacity: 0;
 }
 
@@ -107,6 +111,38 @@
   opacity: 1;
 }
 
+/* ----- top nav animation right ----- */
+.rightmenu .animation2 {
+  position: absolute;
+  height: 32px;
+  width: 70px;
+  top: 12px;
+  left: 372px;
+  z-index: -1;
+  background: #7b7f88;
+  border-radius: 12px;
+  transition: all 0.2s ease-in;
+  transition-delay: 0.15s;
+  opacity: 0;
+}
+
+.start2, li:nth-child(1):hover~.animation2 {
+  left: 372px;
+  opacity: 1;
+}
+
+.start2, li:nth-child(2):hover~.animation2 {
+  left: 442px;
+  width: 94px;
+  opacity: 1;
+}
+
+.start2, li:nth-child(3):hover~.animation2 {
+  left: 536px;
+  width: 72px;
+  opacity: 1;
+}
+
 /* ----- side nav ----- */
 .side-nav ul {
   list-style: none;
@@ -123,7 +159,6 @@
   height: 24px;
 }
 
-
 /* ----- showcase ----- */
 .showcase {
   display: flex;
@@ -135,7 +170,7 @@
 
 .showcase h1 {
   color: var(--prim-color);
-  margin-top: 65px;
+  margin-top: 67px;
   font-size: 40px;
 }
 
