@@ -6,7 +6,7 @@
   src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2)
     format("woff2");
 }
-/* @font-face {
+ @font-face {
   font-display: swap;
   font-family: Gotham SSm;
   font-style: normal;
@@ -37,7 +37,7 @@
   font-weight: 200;
   src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-XLight_Web.woff2)
     format("woff2");
-} */
+}
 
 :root {
   --prim-color: #fff;
@@ -72,12 +72,28 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-header {
+#header {
   height: 100vh;
   background: url('./images/model-3-bg.jpg') no-repeat center center/cover;
-
+  position: relative;
 }
 
+.menu-shrink{
+  display: none;
+  background: #7b7f88;
+  height: 32px;
+  width: 71px;
+  padding: 8px 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.menu-shrink:hover{
+  background: #5e6169;
+}
 a {
   text-decoration: none;
   color: var(--prim-color);
@@ -95,7 +111,7 @@ a {
   font-size: 12px;
 }
 
-.order-btn{
+.btn-standard{
   width: 206px;
   height: 40px;
   background-color: transparent;
@@ -109,8 +125,54 @@ a {
   transition: all 0.5s ease;
 }
 
-.order-btn:hover{
+.btn-standard:hover{
   background: #fff;
   color: #000;
 }
+
+.little-arrow{
+  position: absolute;
+  left: 49.4%;
+  top: 96.7%;
+}
+
+.little-arrow{
+  animation: arrow 2s forwards infinite;
+}
+
+@keyframes arrow{
+  20%{
+    transform: translateY(5px);
+  }
+  30%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(3px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 1199px) {
+  #header nav .centermenu, #header nav .rightmenu{
+    display: none;
+  }
+  .menu-shrink{
+    display: block;
+  }
+
+  #header {
+    background: url('./images/model-3-bg-mobile.jpg') no-repeat center center/cover;
+  }
+
+  #header .topnavbar .logo {
+    padding-left: 20px;
+  }
+}
+
 

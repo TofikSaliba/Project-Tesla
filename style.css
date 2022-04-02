@@ -222,23 +222,6 @@
   display: block;
 }
 
-.side-nav ul #P-four:after{
-  position: absolute;
-  content: 'ALL-WHEELDRIVE';
-  color: #eee;
-  font-size: 10px;
-  font-weight: 400;
-  width: 104px;
-  top: 5px;
-  left: 8px;
-  letter-spacing: 0.2px;
-  display: none;
-}
-
-.side-nav ul #P-four:hover:after{
-  display: block;
-}
-
 /* ----- showcase ----- */
 .showcase {
   display: flex;
@@ -266,6 +249,12 @@
   margin-top: 660px;
 }
 
+.showcase .showcase-badges .for-mobile{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
 /* badge one on the left */
 .showcase-badges h2{
   font-weight: 500;
@@ -287,7 +276,7 @@
 }
 
 .showcase-badges .badge-three{
-  transition: all 1s ease;
+  transition: all 1s ease ;
   opacity: 0;
   transition-delay: 0.2s;
 }
@@ -432,7 +421,7 @@
   }
 }
 
-/* ----- second page ----- */
+/* --------------- second page --------------- */
 
 .second-page {
   height: 100vh;
@@ -440,17 +429,91 @@
 }
 
 .hero-img {
-  width: 100%;
-  background: url('./images/model-3-hero.jpg') no-repeat center center/cover;
-  flex: 4 0 0;
+  flex: 3.65 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 95.9%;
+  /* text-align: center; */
 }
 
 .right-safety {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   flex: 1 0 0;
   color: black;
+}
+
+.right-safety .titles p{
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.right-safety .titles h1{
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.right-safety .paragraphs{
+  padding: 0 20px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 20px;
+  margin-top: 30px;
+}
+
+.right-safety .paragraphs h4{
+  font-weight: 500;
+}
+
+.right-safety .paragraphs p a{
+  color: #333;
+  text-decoration: underline;
+}
+
+.right-safety .paragraphs p a:hover{
+  text-decoration-thickness: 2px;
+}
+
+.right-safety .buttons-div{
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.right-safety .buttons-div label{
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+}
+
+.learn-more, .order-now{
+  border-color: #000;
+  color: #000;
+}
+
+.learn-more:hover, .order-now:hover{
+  color: #fff;
+  background-color: #111;
+}
+
+.order-now{
+  width: 187px;
+}
+
+.learn-more{
+  width: 40px;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 /* ----- side bar for 2nd page ----- */
@@ -470,12 +533,6 @@
   border-width: 0.5px;
   margin-left: 0;
 }
-.second-page:hover~.side-nav ul #P-four{
-  border-color: #888;
-  border-width: 0.5px;
-  margin-left: 0;
-}
-
 
 /* ----- page 3 ----- */
 
@@ -508,6 +565,48 @@
   display: flex;
   justify-content: center;
   color: black;
+  margin-top: 30px;
+}
+
+.bottom-performance .button-title{
+  flex: 1 0 0;
+  margin-left: 400px;
+}
+
+.button-title .title p{
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.button-title .title h1{
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #111;
+}
+
+.bottom-performance .paragraph{
+  flex: 2 0 0;
+  margin-right: 350px;
+  margin-left: 100  px;
+}
+
+.bottom-performance .paragraph p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333;
+}
+
+.performance-buttons{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.performance-buttons label{
+  margin: 0 10px;
 }
 
 /* ----- side bar for 3rd page ----- */
@@ -527,65 +626,3 @@
   border-width: 3px;
   margin-left: -1px;
 }
-.third-page:hover~.side-nav ul #P-four{
-  border-width: 0.5px;
-  border-color: #888;
-  margin-left: 0;
-}
-
-/* ----- page 4 ----- */
-.fourth-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  position: relative;
-}
-
-.dual-img img {
-  width: 100%;
-  height: 750px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.badges3 {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  background: red;
-}
-
-.bottom-dual {
-  display: flex;
-  justify-content: center;
-  color: black;
-}
-
-/* ----- side bar for 4th page ----- */
-.fourth-page:hover~.side-nav ul #P-one{
-  border-width: 0.5px;
-  border-color: #888;
-  margin-left: 0;
-}
-
-.fourth-page:hover~.side-nav ul #P-two{
-  border-width: 0.5px;
-  border-color: #888;
-  margin-left: 0;
-}
-.fourth-page:hover~.side-nav ul #P-three{
-  border-width: 0.5px;
-  border-color: #888;
-  margin-left: 0;
-}
-.fourth-page:hover~.side-nav ul #P-four{
-  border-color: #000;
-  border-width: 3px;
-  margin-left: -1px;
-}
-/* asdfsafda */
-

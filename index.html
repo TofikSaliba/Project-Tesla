@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://www.tesla.com/_flysystem/s3/css/css_m41RxK2fGzr-I_-xsWihrlsmX-AlBrNFu3XQ2_jzOhU.css
-  "> -->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="utilities.css">
   <link rel="stylesheet" href="style.css">
@@ -17,11 +15,9 @@
 <body>
   <header id="header">
     <nav id="top" class="topnavbar">
-      <h1 class="logo"><a href="#"><svg class="logo-svg" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z"
-              fill="currentColor"></path>
-          </svg></a></h1>
+      <h1 class="logo"><a href="#">
+          <img class="logo-svg" src="./images/logo.svg" alt="logo">
+        </a></h1>
       <ol class="centermenu">
         <li><a href="#"><span>Model S</span></a></li>
         <li><a href="#"><span>Model 3</span></a></li>
@@ -37,48 +33,77 @@
         <li><a href="#"><span>Menu</span></a></li>
         <div class="animation2 start2"></div>
       </ol>
+      <a href="#" class="menu-shrink"><span>Menu</span></a>
     </nav>
     <!-- show case -->
     <div class="showcase">
       <h1>Model 3</h1>
       <div class="showcase-badges">
-        <div class="badge-one">
-          <div class="badge1 badges">
-            <img id="component1" src="./images/svgexport-8.svg" alt="">
-            <img id="component2" src="./images/svgexport-9.svg" alt="">
-            <img id="component3" src="./images/svgexport-10.svg" alt="">
-            <h2>. &nbsp;&nbsp;<span>s</span></h2>
+        <div class="for-mobile">
+          <div class="badge-one">
+            <div class="badge1 badges">
+              <img id="component1" src="./images/svgexport-8.svg" alt="">
+              <img id="component2" src="./images/svgexport-9.svg" alt="">
+              <img id="component3" src="./images/svgexport-10.svg" alt="">
+              <h2>. &nbsp;&nbsp;<span>s</span></h2>
+            </div>
+            <p>0-60 mph*</p>
           </div>
-          <p>0-60 mph*</p>
+          <div class="badge-two">
+            <h2>358<span>mi</span></h2>
+            <p>Range (EPA est.)</p>
+          </div>
+          <div class="badge-three">
+            <h2>AWD</h2>
+            <p>Dual Motor</p>
+          </div>
         </div>
-        <div class="badge-two">
-          <h2>358<span>mi</span></h2>
-          <p>Range (EPA est.)</p>
-        </div>
-        <div class="badge-three">
-          <h2>AWD</h2>
-          <p>Dual Motor</p>
-        </div>
-        <button class="order-btn">Order Now</button>
+        <button class="order-btn btn-standard">Order Now</button>
       </div>
     </div>
+    <!-- arrow down -->
+    <div class="little-arrow">
+      <a href="#second">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="tds-icon tds-icon-chevron--filled--180"
+          viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <defs>
+            <symbol id="tds-icon-chevron--filled--180" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.293 16.317a1 1 0 0 0 1.414 0L12 10.025l6.293 6.293a1 1 0 1 0 1.414-1.414l-7-7a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 0 1.414z"
+                transform="rotate(180 12 12)" fill="#eee"></path>
+            </symbol>
+          </defs>
+          <use xlink:href="#tds-icon-chevron--filled--180"></use>
+        </svg>
+      </a>
+    </div>
   </header>
+  <!-- main -->
   <main>
     <section id="second" class="second-page">
-      <div class="hero-img"></div>
+      <div class="hero-img">
+        <img src="./images/model-3-hero.jpg" alt="2nd hero">
+      </div>
       <div class="right-safety">
         <div class="titles">
+          <p>Safety</p>
           <h1>Built for Safety</h1>
         </div>
         <div class="paragraphs">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis deleniti sed quisquam non doloremque
-            officiis, quia temporibus corrupti nulla voluptatum amet perspiciatis obcaecati voluptatibus aliquid
-            dignissimos totam. Itaque dolore explicabo nulla nesciunt magnam quam eius laboriosam alias, excepturi harum
-            officia.</p>
+          <p>Safety is the most important part of every Tesla. We design our vehicles to <a href="#second">exceed safety
+              standards.</a>
+          </p><br>
+          <h4>5-Star Rating</h4>
+          <p>Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.
+          </p><br>
+          <h4>Top Safety Pick+</h4>
+          <p>Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash
+            prevention categories.</p>
         </div>
-        <div class="buttons">
-          <button class="learn-more">Learn more</button>
-          <button class="order-now">Order Now</button>
+        <div class="buttons-div">
+          <button id="learn" class="learn-more btn-standard">+</button>
+          <label for="learn">LEARN MORE</label>
+          <button class="order-now btn-standard">Order Now</button>
         </div>
       </div>
     </section>
@@ -93,42 +118,25 @@
         </div>
       </div>
       <div class="bottom-performance">
-        <div class="title-buttons">
-          <h1>Quickest Acceleration</h1>
-          <button class="learn-more">Learn more</button>
-          <button class="order-now">Order Now</button>
+        <div class="button-title">
+          <div class="title">
+            <p>Performance</p>
+            <h1>Quickest Acceleration</h1>
+          </div>
+          <div class="performance-buttons">
+            <button id="learn2" class="learn-more btn-standard">+</button>
+            <label for="learn2">LEARN MORE</label>
+            <button class="order-now btn-standard">Order Now</button>
+          </div>
         </div>
         <div class="paragraph">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis deleniti sed quisquam non doloremque
-            officiis, quia temporibus corrupti nulla voluptatum amet perspiciatis obcaecati voluptatibus aliquid
-            dignissimos totam. Itaque dolore explicabo nulla nesciunt magnam quam eius laboriosam alias, excepturi harum
-            officia.</p>
+          <p>Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes
+            for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all
+            allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</p>
         </div>
       </div>
     </section>
-    <!-- fourth -->
-    <section class="fourth-page">
-      <div class="dual-img">
-        <img id="fourth" src="./images/dual-motor.jpg" alt="">
-        <div class="badges3">
-          <div class="badge1">sfd</div>
-          <div class="badge2">fsdsd</div>
-          <div class="badge3">dfssfd</div>
-        </div>
-      </div>
-      <div class="bottom-dual">
-        <div class="title-buttons">
-          <h1>Dual Motor</h1>
-          <button class="order-now">Order Now</button>
-        </div>
-        <div class="paragraph">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis deleniti sed quisquam non doloremque
-            officiis, quia temporibus corrupti nulla voluptatum amet perspiciatis obcaecati voluptatibus aliquid
-            dignissimos totam. Itaque dolore explicabo nulla nesciunt magnam quam eius laboriosam alias, excepturi harum
-            officia.</p>
-        </div>
-      </div>
-    </section>
+    <br><br>
     <nav class="side-nav">
       <ul>
         <a href="#top">
@@ -139,9 +147,6 @@
         </a>
         <a href="#third">
           <li id="P-three"></li>
-        </a>
-        <a href="#fourth">
-          <li id="P-four"></li>
         </a>
       </ul>
     </nav>
