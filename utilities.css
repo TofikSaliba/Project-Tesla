@@ -1,21 +1,43 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
-
 @font-face {
-  font-family: 'Gotham medium1';
-  src: local('Gotham Screen Smart Narrow Medium'), local('Gotham-Screen-Smart-Narrow-Medium'),
-    url('font/GothamNarrSSm-Medium.woff2') format('woff2'),
-    url('font/GothamNarrSSm-Medium.woff') format('woff'),
-    url('font/GothamNarrSSm-Medium.ttf') format('truetype');
-  font-weight: 500;
+  font-display: swap;
+  font-family: Gotham SSm;
   font-style: normal;
+  font-weight: 500;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2)
+    format("woff2");
 }
-
+/* @font-face {
+  font-display: swap;
+  font-family: Gotham SSm;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2)
+    format("woff2");
+}
 @font-face {
-  font-family: 'Gotham medium2';
-  src: url('font/Gotham Medium.otf');
-  font-weight: 500;
+  font-display: swap;
+  font-family: Gotham SSm;
   font-style: normal;
+  font-weight: 700;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Bold_Web.woff2)
+    format("woff2");
 }
+@font-face {
+  font-display: swap;
+  font-family: Gotham SSm;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Light_Web.woff2)
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: Gotham SSm;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-XLight_Web.woff2)
+    format("woff2");
+} */
 
 :root {
   --prim-color: #fff;
@@ -34,7 +56,8 @@ h1 {
 }
 
 body {
-  font-family: "Gotham medium2", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  /* font-family: "Gotham medium2", "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
+  font-family: Gotham SSm, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   color: var(--prim-color);
 }
@@ -42,6 +65,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -70,3 +94,23 @@ a {
   font-weight: 400;
   font-size: 12px;
 }
+
+.order-btn{
+  width: 206px;
+  height: 40px;
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.order-btn:hover{
+  background: #fff;
+  color: #000;
+}
+

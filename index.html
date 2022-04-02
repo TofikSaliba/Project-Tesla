@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://www.tesla.com/_flysystem/s3/css/css_m41RxK2fGzr-I_-xsWihrlsmX-AlBrNFu3XQ2_jzOhU.css
-  ">
+  <!-- <link rel="stylesheet" href="https://www.tesla.com/_flysystem/s3/css/css_m41RxK2fGzr-I_-xsWihrlsmX-AlBrNFu3XQ2_jzOhU.css
+  "> -->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="utilities.css">
   <link rel="stylesheet" href="style.css">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <nav id="top" class="topnavbar">
       <h1 class="logo"><a href="#"><svg class="logo-svg" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -23,7 +23,7 @@
               fill="currentColor"></path>
           </svg></a></h1>
       <ol class="centermenu">
-        <li class="ff"><a href="#"><span>Model S</span></a></li>
+        <li><a href="#"><span>Model S</span></a></li>
         <li><a href="#"><span>Model 3</span></a></li>
         <li><a href="#"><span>Model X</span></a></li>
         <li><a href="#"><span>Model Y</span></a></li>
@@ -38,21 +38,6 @@
         <div class="animation2 start2"></div>
       </ol>
     </nav>
-    <!-- side nav -->
-    <nav class="side-nav">
-      <ul>
-        <a href="#top">
-          <li></li>
-        </a>
-        <a href="#second">
-          <li></li>
-        </a><a href="#third">
-          <li></li>
-        </a><a href="#fourth">
-          <li></li>
-        </a>
-      </ul>
-    </nav>
     <!-- show case -->
     <div class="showcase">
       <h1>Model 3</h1>
@@ -62,19 +47,19 @@
             <img id="component1" src="./images/svgexport-8.svg" alt="">
             <img id="component2" src="./images/svgexport-9.svg" alt="">
             <img id="component3" src="./images/svgexport-10.svg" alt="">
-            <!-- <h2>. s</h2> -->
+            <h2>. &nbsp;&nbsp;<span>s</span></h2>
           </div>
           <p>0-60 mph*</p>
         </div>
-        <div class="badge2 badges">
-          <h2>358 mi</h2>
+        <div class="badge-two">
+          <h2>358<span>mi</span></h2>
           <p>Range (EPA est.)</p>
         </div>
-        <div class="badge3 badges">
+        <div class="badge-three">
           <h2>AWD</h2>
           <p>Dual Motor</p>
         </div>
-        <button>Order Now</button>
+        <button class="order-btn">Order Now</button>
       </div>
     </div>
   </header>
@@ -144,6 +129,22 @@
         </div>
       </div>
     </section>
+    <nav class="side-nav">
+      <ul>
+        <a href="#top">
+          <li id="P-one"></li>
+        </a>
+        <a href="#second">
+          <li id="P-two"></li>
+        </a>
+        <a href="#third">
+          <li id="P-three"></li>
+        </a>
+        <a href="#fourth">
+          <li id="P-four"></li>
+        </a>
+      </ul>
+    </nav>
   </main>
 </body>
 
