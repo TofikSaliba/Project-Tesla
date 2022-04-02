@@ -56,7 +56,6 @@ h1 {
 }
 
 body {
-  /* font-family: "Gotham medium2", "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
   font-family: Gotham SSm, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   color: var(--prim-color);
@@ -78,6 +77,7 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+/* ----- when navbar shrinked this is the small button menu ----- */
 .menu-shrink{
   display: none;
   background: #7b7f88;
@@ -94,6 +94,7 @@ body::-webkit-scrollbar {
 .menu-shrink:hover{
   background: #5e6169;
 }
+
 a {
   text-decoration: none;
   color: var(--prim-color);
@@ -136,6 +137,7 @@ a {
   top: 96.7%;
 }
 
+/* ----- little arrow on showcase to go to the next section ----- */
 .little-arrow{
   animation: arrow 2s forwards infinite;
 }
