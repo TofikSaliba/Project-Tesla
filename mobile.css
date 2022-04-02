@@ -1,0 +1,300 @@
+@media(max-width: 1199px) {
+  #header nav .centermenu, #header nav .rightmenu, .little-arrow, .side-nav{
+    display: none;
+  }
+  .menu-shrink{
+    display: block;
+  }
+
+  #header {
+    background: url('./images/model-3-bg-mobile.jpg') no-repeat center center/cover;
+    height: 79vh;
+  }
+
+  #header .topnavbar .logo {
+    padding-left: 20px;
+  }
+
+  .showcase h1 {
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  .showcase .showcase-badges {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 330px;
+  }
+
+  .showcase .showcase-badges .for-mobile{
+    justify-content: space-between;
+    width: 320px;
+    margin-bottom: 10px;
+  }
+
+  .showcase-badges h2{
+    font-size: 20px;
+  }
+
+  .showcase-badges p{
+    font-size: 10px;
+  }
+
+  .showcase-badges .badge-one{
+    margin-top: 0;
+    width: 95px;
+  }
+
+  .badge-one .badge1 h2{
+    top: 2px;
+    left: 58px;
+  }
+
+  .showcase-badges h2 span{
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .badge-one p{
+    line-height: 28px;
+    font-size: 10px;
+  }
+
+  .badge1:before{
+    font-size: 20px;
+    line-height: 20px;
+    left: 40px;
+  }
+
+  @keyframes roll2{
+    10%{
+      transform: translateY(0);
+    }
+    30%{
+      transform: translateY(-5px);
+    }
+    100%{
+      transform: translateY(-55px);
+    }
+  }
+
+  .badge1:after{
+    font-size: 20px;
+    line-height: 22px;
+    top: -2px;
+    left: 62px;
+  }
+
+  @keyframes roll{
+    10%{
+      transform: translateY(-5px);
+    }
+    100%{
+      transform: translateY(-238px);
+    }
+  }
+
+  .showcase-badges .badge-one{
+    opacity: 1;
+  }
+
+  .showcase-badges .badge-two{
+    opacity: 1;
+  }
+
+  .showcase-badges .badge-three{
+    opacity: 1;
+  }
+
+  .showcase-badges .order-btn{
+    opacity: 1;
+  }
+
+  #header:hover .badge-one, #header:hover .badge-two, #header:hover .badge-three, #header:hover .order-btn{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .showcase-badges .order-btn{
+    width: 325px;
+  }
+
+  /* second page */
+  .second-page{
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .hero-img {
+    flex: 1 0 0;
+    align-items: flex-start;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .hero-img img {
+    width: 130%;
+  }
+
+  .right-safety {
+    flex: 2.5 0 0;
+    height: 50vh;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .right-safety .titles{
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+
+  .right-safety .paragraphs{
+    padding: 0 20px;
+  }
+
+  .right-safety .buttons-div{
+    margin-top: 40px;
+    align-items: flex-start;
+  }
+
+  .right-safety .buttons-div label{
+    margin: 12px 10px 0 10px;
+  }
+
+  /* third page */
+  .third-page{
+    margin-top: -80px;
+    height: 75vh;
+  }
+
+  .performance-img img {
+    height: 180%;
+  }
+
+  /* badges page 3 */
+  .third-badges {
+    top: 38%;
+    left: 10%;
+    width: 300px;
+  }
+
+  .third-badges h2{
+    font-size: 20px;
+  }
+
+  .third-badges p{
+    font-size: 10px;
+    line-height: 24px;
+  }
+
+  .badge-one-2 .badge1-2 h2{
+    top: 3px;
+    left: 60px;
+    font-weight: 500;
+  }
+
+  .third-badges h2 span{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .badge-one-2 p{
+    text-align: center;
+    line-height: 24px;
+    font-size: 10px;
+  }
+
+  .badge1-2:before{
+    font-size: 20px;
+    line-height: 22px;
+    top: -1px;
+    left: 40px;
+  }
+
+  .badge1-2:after{
+    font-size: 20px;
+    line-height: 24px;
+    top: -1px;
+    left: 64px;
+  }
+
+  .third-page:hover .badge-one-2, .third-page:hover .badge-two-2, .third-page:hover .badge-three-2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @keyframes roll2{
+    10%{
+      transform: translateY(0);
+    }
+    30%{
+      transform: translateY(-5px);
+    }
+    100%{
+      transform: translateY(-62px);
+    }
+  }
+
+  @keyframes roll{
+    10%{
+      transform: translateY(-5px);
+    }
+    100%{
+      transform: translateY(-261px);
+    }
+  }
+
+  .third-badges .badge-one-2{
+    opacity: 1;
+    width: 99px;
+  }
+  .third-badges .badge-two-2{
+    margin-top: 2px;
+    opacity: 1;
+  }
+  .third-badges .badge-three-2{
+    margin-top: 2px;
+    opacity: 1;
+  }
+
+  /* bottom performance */
+  .bottom-performance {
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-top: 230px;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .bottom-performance .button-title{
+    flex: 1 0 0;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .bottom-performance .paragraph{
+    flex: 1 0 0;
+    margin: 0 0 80px 0;
+    padding: 0 20px;
+  }
+
+  .button-title .title h1{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .performance-buttons label{
+    font-size: 12px;
+  }
+  
+  .performance-buttons{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+}

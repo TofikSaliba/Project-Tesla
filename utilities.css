@@ -160,21 +160,4 @@ a {
   }
 }
 
-@media(max-width: 1199px) {
-  #header nav .centermenu, #header nav .rightmenu{
-    display: none;
-  }
-  .menu-shrink{
-    display: block;
-  }
-
-  #header {
-    background: url('./images/model-3-bg-mobile.jpg') no-repeat center center/cover;
-  }
-
-  #header .topnavbar .logo {
-    padding-left: 20px;
-  }
-}
-
 
