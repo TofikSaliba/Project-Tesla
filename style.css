@@ -1,806 +1,883 @@
 /* ----- top navbar ----- */
+
+
 /* ----- logo ----- */
+
 .topnavbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  padding-left: 32px;
-  height: 56px;
-  padding-bottom: 0;
-  padding-top: 0;
-  flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    height: 56px;
+    padding-bottom: 0;
+    padding-top: 0;
+    flex: 1 0 0;
 }
 
 .logo .logo-svg {
-  width: 120px;
-  height: 24px;
+    width: 120px;
+    height: 24px;
 }
 
 .logo a {
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 32px;
 }
+
 
 /* ----- middle menu ----- */
+
 .centermenu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 16px;
-  height: 56px;
-  min-width: 640px;
-  flex: 1 0 0;
-  z-index: 1;
-  position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    height: 56px;
+    min-width: 640px;
+    flex: 1 0 0;
+    z-index: 1;
+    position: relative;
 }
+
 
 /* ----- right menu ----- */
+
 .rightmenu {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 32px;
-  height: 56px;
-  flex: 1 0 0;
-  z-index: 1;
-  position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 32px;
+    height: 56px;
+    flex: 1 0 0;
+    z-index: 1;
+    position: relative;
 }
 
-.centermenu li a, .rightmenu li a {
-  padding: 4px 8px;
-  flex: 4 0 100px;
+.centermenu li a,
+.rightmenu li a {
+    padding: 4px 8px;
+    flex: 4 0 100px;
 }
 
-.centermenu li a span, .rightmenu li a span {
-  margin: 0 8px;
-  font-size: 14px;
+.centermenu li a span,
+.rightmenu li a span {
+    margin: 0 8px;
+    font-size: 14px;
 }
+
 
 /* ----- top nav animation center ----- */
+
 .centermenu .animation {
-  position: absolute;
-  height: 32px;
-  width: 91px;
-  top: 12px;
-  left: 20px;
-  z-index: -1;
-  background: #7b7f88;
-  border-radius: 12px;
-  transition: all 0.2s ease-in;
-  transition-delay: 0.15s;
-  opacity: 0;
+    position: absolute;
+    height: 32px;
+    width: 91px;
+    top: 12px;
+    left: 20px;
+    z-index: -1;
+    background: #7b7f88;
+    border-radius: 12px;
+    transition: all 0.2s ease-in;
+    transition-delay: 0.15s;
+    opacity: 0;
 }
 
-.start, li:nth-child(1):hover~.animation {
-  left: 20px;
-  opacity: 1;
+.start,
+li:nth-child(1):hover~.animation {
+    left: 20px;
+    opacity: 1;
 }
 
-.start, li:nth-child(2):hover~.animation {
-  left: 111px;
-  opacity: 1;
+.start,
+li:nth-child(2):hover~.animation {
+    left: 111px;
+    opacity: 1;
 }
 
-.start, li:nth-child(3):hover~.animation {
-  left: 202px;
-  width: 93px;
-  opacity: 1;
+.start,
+li:nth-child(3):hover~.animation {
+    left: 202px;
+    width: 93px;
+    opacity: 1;
 }
 
-.start, li:nth-child(4):hover~.animation {
-  left: 295px;
-  width: 92px;
-  opacity: 1;
+.start,
+li:nth-child(4):hover~.animation {
+    left: 295px;
+    width: 92px;
+    opacity: 1;
 }
 
-.start, li:nth-child(5):hover~.animation {
-  left: 387px;
-  width: 110px;
-  opacity: 1;
+.start,
+li:nth-child(5):hover~.animation {
+    left: 387px;
+    width: 110px;
+    opacity: 1;
 }
 
-.start, li:nth-child(6):hover~.animation {
-  left: 497px;
-  width: 123px;
-  opacity: 1;
+.start,
+li:nth-child(6):hover~.animation {
+    left: 497px;
+    width: 123px;
+    opacity: 1;
 }
+
 
 /* ----- top nav animation right ----- */
+
 .rightmenu .animation2 {
-  position: absolute;
-  height: 32px;
-  width: 70px;
-  top: 12px;
-  left: 372px;
-  z-index: -1;
-  background: #7b7f88;
-  border-radius: 12px;
-  transition: all 0.2s ease-in;
-  transition-delay: 0.15s;
-  opacity: 0;
+    position: absolute;
+    height: 32px;
+    width: 70px;
+    top: 12px;
+    left: 372px;
+    z-index: -1;
+    background: #7b7f88;
+    border-radius: 12px;
+    transition: all 0.2s ease-in;
+    transition-delay: 0.15s;
+    opacity: 0;
 }
 
-.start2, li:nth-child(1):hover~.animation2 {
-  left: 372px;
-  opacity: 1;
+.start2,
+li:nth-child(1):hover~.animation2 {
+    left: 372px;
+    opacity: 1;
 }
 
-.start2, li:nth-child(2):hover~.animation2 {
-  left: 442px;
-  width: 94px;
-  opacity: 1;
+.start2,
+li:nth-child(2):hover~.animation2 {
+    left: 442px;
+    width: 94px;
+    opacity: 1;
 }
 
-.start2, li:nth-child(3):hover~.animation2 {
-  left: 536px;
-  width: 72px;
-  opacity: 1;
+.start2,
+li:nth-child(3):hover~.animation2 {
+    left: 536px;
+    width: 72px;
+    opacity: 1;
 }
+
 
 /* ----- side nav ----- */
 
 .side-nav {
-  position: fixed;
-  top: 36.5%;
-  z-index: 3;
+    position: fixed;
+    top: 36.5%;
+    z-index: 3;
 }
 
 .side-nav ul {
-  list-style: none;
-  margin-left: 14px;
+    list-style: none;
+    margin-left: 14px;
 }
 
 .side-nav ul li {
-  border-left: 0.5px solid #888;
-  margin-top: 5px;
-  width: 15px;
-  height: 24px;
-  position: relative;
+    border-left: 0.5px solid #888;
+    margin-top: 5px;
+    width: 15px;
+    height: 24px;
+    position: relative;
 }
 
-.side-nav ul #P-one{
-  border-width: 3px;
-  border-color: #fff; 
-  margin-left: -1px;
+.side-nav ul #P-one {
+    border-width: 3px;
+    border-color: #fff;
+    margin-left: -1px;
 }
+
 
 /* ----- side bar hover words ----- */
-.side-nav ul #P-one:after{
-  position: absolute;
-  content: 'MODEL 3';
-  color: #eee;
-  font-size: 10px;
-  font-weight: 400;
-  width: 55px;
-  top: 5px;
-  left: 8px;
-  letter-spacing: 0.2px;
-  display: none;
+
+.side-nav ul #P-one:after {
+    position: absolute;
+    content: 'MODEL 3';
+    color: #eee;
+    font-size: 10px;
+    font-weight: 400;
+    width: 55px;
+    top: 5px;
+    left: 8px;
+    letter-spacing: 0.2px;
+    display: none;
 }
 
-.side-nav ul #P-one:hover:after{
-  display: block;
+.side-nav ul #P-one:hover:after {
+    display: block;
 }
 
-.side-nav ul #P-two:after{
-  position: absolute;
-  content: 'SAFETY';
-  color: #eee;
-  font-size: 10px;
-  font-weight: 400;
-  width: 55px;
-  top: 5px;
-  left: 8px;
-  letter-spacing: 0.2px;
-  display: none;
+.side-nav ul #P-two:after {
+    position: absolute;
+    content: 'SAFETY';
+    color: #eee;
+    font-size: 10px;
+    font-weight: 400;
+    width: 55px;
+    top: 5px;
+    left: 8px;
+    letter-spacing: 0.2px;
+    display: none;
 }
 
-.side-nav ul #P-two:hover:after{
-  display: block;
+.side-nav ul #P-two:hover:after {
+    display: block;
 }
 
-.side-nav ul #P-three:after{
-  position: absolute;
-  content: 'PERFORMANCE';
-  color: #eee;
-  font-size: 10px;
-  font-weight: 400;
-  width: 55px;
-  top: 5px;
-  left: 8px;
-  letter-spacing: 0.2px;
-  display: none;
+.side-nav ul #P-three:after {
+    position: absolute;
+    content: 'PERFORMANCE';
+    color: #eee;
+    font-size: 10px;
+    font-weight: 400;
+    width: 55px;
+    top: 5px;
+    left: 8px;
+    letter-spacing: 0.2px;
+    display: none;
 }
 
-.side-nav ul #P-three:hover:after{
-  display: block;
+.side-nav ul #P-three:hover:after {
+    display: block;
 }
+
 
 /* ----- showcase ----- */
+
 .showcase {
-  display: flex;
-  height: 80%;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .showcase h1 {
-  color: var(--prim-color);
-  margin-top: 97px;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 48px;
-  letter-spacing: -0.6px;
+    color: var(--prim-color);
+    margin-top: 97px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.6px;
 }
+
 
 /* ----- showcase badges ----- */
+
 .showcase .showcase-badges {
-  display: flex;
-  justify-content: space-between;
-  width: 768px;
-  margin-top: 660px;
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin-top: 660px;
 }
 
-.showcase .showcase-badges .for-mobile{
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
+.showcase .showcase-badges .for-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
 }
+
 
 /* ----- badges properties , fonts etc.. ----- */
-.showcase-badges h2{
-  font-weight: 500;
-  font-size: 28px;
-  text-align: center;
+
+.showcase-badges h2 {
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
 }
 
-.showcase-badges p{
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  line-height: 32px;
+.showcase-badges p {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    line-height: 32px;
 }
 
-.showcase-badges .badge-two{
-  transition: all 1s ease;
-  opacity: 0;
-  transition-delay: 0.2s;
+.showcase-badges .badge-two {
+    transition: all 1s ease;
+    opacity: 0;
+    transition-delay: 0.2s;
 }
 
-.showcase-badges .badge-three{
-  transition: all 1s ease ;
-  opacity: 0;
-  transition-delay: 0.4s;
+.showcase-badges .badge-three {
+    transition: all 1s ease;
+    opacity: 0;
+    transition-delay: 0.4s;
 }
 
-.showcase-badges .order-btn{
-  margin-top: 2px;
-  transition: opacity transform 1.5s ease;
-  opacity: 0;
-  transition-delay: 0.5s;
+.showcase-badges .order-btn {
+    margin-top: 2px;
+    transition: opacity transform 1.5s ease;
+    opacity: 0;
+    transition-delay: 0.5s;
 }
+
 
 /* ----- badge on the left ----- */
-.showcase-badges .badge-one{
-  margin-top: 5px;
-  margin-left: 27px;
-  width: 115px;
-  transition: all 1s ease;
-  opacity: 0;
-}
-.showcase-badges .badge1{
-  position: relative;
-  overflow: hidden;
+
+.showcase-badges .badge-one {
+    margin-top: 5px;
+    margin-left: 27px;
+    width: 115px;
+    transition: all 1s ease;
+    opacity: 0;
 }
 
-.badge-one .badge1 h2{
-  position: absolute;
-  top: -4px;
-  left: 65px;
-  font-weight: 500;
+.showcase-badges .badge1 {
+    position: relative;
+    overflow: hidden;
 }
 
-.showcase-badges h2 span{
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: -1.5px;
-  margin-left: 2px;
+.badge-one .badge1 h2 {
+    position: absolute;
+    top: -4px;
+    left: 65px;
+    font-weight: 500;
 }
 
-.badge-one p{
-  text-align: center;
-  line-height: 34px;
-  font-size: 12px;
+.showcase-badges h2 span {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -1.5px;
+    margin-left: 2px;
 }
 
-#component2{
-  position: absolute;
-  opacity: 0;
-  top: 5px;
-  left: 5px;
+.badge-one p {
+    text-align: center;
+    line-height: 34px;
+    font-size: 12px;
 }
 
-#component3{
-  position: absolute;
-  top: 4px;
-  left: 18px;
+#component2 {
+    position: absolute;
+    opacity: 0;
+    top: 5px;
+    left: 5px;
 }
+
+#component3 {
+    position: absolute;
+    top: 4px;
+    left: 18px;
+}
+
 
 /* ----- clock animation ----- */
-#component3{
-  transform: rotate(-90deg);
-  transform-origin: bottom;
-} 
 
-#header:hover .badge1 #component3{
-  transform-origin: bottom;
-  animation: rotated 1.2s forwards;
-  animation-delay: 0.3s;
+#component3 {
+    transform: rotate(-90deg);
+    transform-origin: bottom;
 }
 
-@keyframes rotated{
-  100%{
-    transform: rotate(90deg);
-  }
+#header:hover .badge1 #component3 {
+    transform-origin: bottom;
+    animation: rotated 1.2s forwards;
+    animation-delay: 0.3s;
 }
+
+@keyframes rotated {
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
 
 /* clock background */
-#header:hover .badge1 #component2{
-  opacity: 0.5;
-  transition: all 2s ease;
-  transition-delay: 0.3s;
+
+#header:hover .badge1 #component2 {
+    opacity: 0.5;
+    transition: all 2s ease;
+    transition-delay: 0.3s;
 }
+
 
 /* ----- numbers animation ----- */
-.badge1:before{
-  content: '0 1 2 3';
-  position: absolute;
-  color: white;
-  text-align: center;
-  font-size: 28px;
-  line-height: 28px;
-  width: 20px;
-  top: -2px;
-  left: 44px;
+
+.badge1:before {
+    content: '0 1 2 3';
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+    width: 20px;
+    top: -2px;
+    left: 44px;
 }
 
-.badge1:after{
-  content: '0 1 2 3 4 5 6 7 8 9 0 1';
-  position: absolute;
-  color: #fff;
-  text-align: center;
-  font-size: 28px;
-  line-height: 28px;
-  width: 20px;
-  top: -2px;
-  left: 75px;
+.badge1:after {
+    content: '0 1 2 3 4 5 6 7 8 9 0 1';
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+    width: 20px;
+    top: -2px;
+    left: 75px;
 }
+
 
 /* ----- hovers and animations ----- */
-#header:hover .badge-one, #header:hover .badge-two, #header:hover .badge-three, #header:hover .order-btn{
-  transform: translateY(-40px);
-  opacity: 1;
+
+#header:hover .badge-one,
+#header:hover .badge-two,
+#header:hover .badge-three,
+#header:hover .order-btn {
+    transform: translateY(-40px);
+    opacity: 1;
 }
 
-#header:hover .badge1:before{
-  animation: roll2 1s forwards;
-  animation-delay: 0.3s;
+#header:hover .badge1:before {
+    animation: roll2 1s forwards;
+    animation-delay: 0.3s;
 }
 
-@keyframes roll2{
-  10%{
-    transform: translateY(0);
-  }
-  30%{
-    transform: translateY(-10px);
-  }
-  100%{
-    transform: translateY(-84px);
-  }
+@keyframes roll2 {
+    10% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-84px);
+    }
 }
 
-#header:hover .badge1:after{
-  animation: roll 1.1s forwards;
-  animation-delay: 0.3s;
+#header:hover .badge1:after {
+    animation: roll 1.1s forwards;
+    animation-delay: 0.3s;
 }
 
-@keyframes roll{
-  10%{
-    transform: translateY(-10px);
-  }
-  100%{
-    transform: translateY(-308px);
-  }
+@keyframes roll {
+    10% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-308px);
+    }
 }
+
 
 /* --------------- second page --------------- */
 
 .second-page {
-  height: 100vh;
-  display: flex;
+    height: 100vh;
+    display: flex;
 }
 
 .hero-img {
-  flex: 3.65 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    flex: 3.65 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-img img {
-  width: 95.9%;
+    width: 95.9%;
 }
+
 
 /* ----- right box ----- */
+
 .right-safety {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1 0 0;
-  color: black;
-  transform: translateY(50px);
-  transition: all 1s ease;
-  opacity: 0;
-  transition-delay: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    color: black;
+    transform: translateY(50px);
+    transition: all 1s ease;
+    opacity: 0;
+    transition-delay: 0.3s;
 }
 
-.right-safety .titles p{
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 24px;
+.right-safety .titles p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
 }
 
-.right-safety .titles h1{
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 36px;
+.right-safety .titles h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
 }
 
-.right-safety .paragraphs{
-  padding: 0 20px 0 0;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333;
-  line-height: 20px;
-  margin-top: 30px;
+.right-safety .paragraphs {
+    padding: 0 20px 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 20px;
+    margin-top: 30px;
 }
 
-.right-safety .paragraphs h4{
-  font-weight: 500;
+.right-safety .paragraphs h4 {
+    font-weight: 500;
 }
 
-.right-safety .paragraphs p a{
-  color: #333;
-  text-decoration: underline;
+.right-safety .paragraphs p a {
+    color: #333;
+    text-decoration: underline;
 }
 
-.right-safety .paragraphs p a:hover{
-  text-decoration-thickness: 2px;
+.right-safety .paragraphs p a:hover {
+    text-decoration-thickness: 2px;
 }
 
-.right-safety .buttons-div{
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.right-safety .buttons-div {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.right-safety .buttons-div label{
-  font-size: 12px;
-  font-weight: 400;
-  margin: 0 10px 10px 10px;
+.right-safety .buttons-div label {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 10px 10px 10px;
 }
 
-.learn-more, .order-now{
-  border-color: #000;
-  color: #000;
+.learn-more,
+.order-now {
+    border-color: #000;
+    color: #000;
 }
 
-.learn-more:hover, .order-now:hover{
-  color: #fff;
-  background-color: #111;
+.learn-more:hover,
+.order-now:hover {
+    color: #fff;
+    background-color: #111;
 }
 
-.order-now{
-  width: 187px;
+.order-now {
+    width: 187px;
 }
 
-.learn-more{
-  width: 40px;
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 20px;
+.learn-more {
+    width: 40px;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 20px;
 }
+
 
 /* ----- right box transition ----- */
-.second-page:hover .right-safety{
-  transform: translateY(0);
-  opacity: 1;
+
+.second-page:hover .right-safety {
+    transform: translateY(0);
+    opacity: 1;
 }
+
 
 /* ----- side bar for 2nd page ----- */
-.second-page:hover~.side-nav ul #P-one{
-  border-width: 0.5px;
-  border-color: #888;
-  margin-left: 0;
+
+.second-page:hover~.side-nav ul #P-one {
+    border-width: 0.5px;
+    border-color: #888;
+    margin-left: 0;
 }
 
-.second-page:hover~.side-nav ul #P-two{
-  border-color: #000;
-  border-width: 3px;
-  margin-left: -1px;
+.second-page:hover~.side-nav ul #P-two {
+    border-color: #000;
+    border-width: 3px;
+    margin-left: -1px;
 }
-.second-page:hover~.side-nav ul #P-three{
-  border-color: #888;
-  border-width: 0.5px;
-  margin-left: 0;
+
+.second-page:hover~.side-nav ul #P-three {
+    border-color: #888;
+    border-width: 0.5px;
+    margin-left: 0;
 }
+
 
 /* --------------- page 3 --------------- */
 
 .third-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100vh;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    position: relative;
 }
 
 .performance-img img {
-  width: 100%;
-  height: 750px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+    width: 100%;
+    height: 750px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
+
+
 /* ----- page 3 badges ----- */
 
 .third-badges {
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  top: 75%;
-  left: 30%;
-  width: 750px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    width: 750px;
 }
 
-.third-badges h2{
-  font-weight: 500;
-  font-size: 28px;
-  text-align: center;
+.third-badges h2 {
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
 }
 
-.third-badges p{
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  line-height: 32px;
+.third-badges p {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    line-height: 32px;
 }
 
-.third-badges .badge-two-2{
-  transition: all 1s ease;
-  opacity: 0;
-  transition-delay: 0.2s;
+.third-badges .badge-two-2 {
+    transition: all 1s ease;
+    opacity: 0;
+    transition-delay: 0.2s;
 }
 
-.third-badges .badge-three-2{
-  transition: all 1s ease ;
-  opacity: 0;
-  transition-delay: 0.4s;
+.third-badges .badge-three-2 {
+    transition: all 1s ease;
+    opacity: 0;
+    transition-delay: 0.4s;
 }
 
-.third-badges .badge-one-2{
-  width: 115px;
-  transition: all 1s ease;
-  opacity: 0;
+.third-badges .badge-one-2 {
+    width: 115px;
+    transition: all 1s ease;
+    opacity: 0;
 }
+
 
 /* ----- badge on the left ----- */
-.third-badges .badge1-2{
-  position: relative;
-  overflow: hidden;
+
+.third-badges .badge1-2 {
+    position: relative;
+    overflow: hidden;
 }
 
-.badge-one-2 .badge1-2 h2{
-  position: absolute;
-  top: -4px;
-  left: 65px;
-  font-weight: 500;
+.badge-one-2 .badge1-2 h2 {
+    position: absolute;
+    top: -4px;
+    left: 65px;
+    font-weight: 500;
 }
 
-.third-badges h2 span{
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: -1.5px;
-  margin-left: 2px;
+.third-badges h2 span {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -1.5px;
+    margin-left: 2px;
 }
 
-.badge-one-2 p{
-  text-align: center;
-  line-height: 34px;
-  font-size: 12px;
+.badge-one-2 p {
+    text-align: center;
+    line-height: 34px;
+    font-size: 12px;
 }
 
-#component2-2{
-  position: absolute;
-  opacity: 0;
-  top: 5px;
-  left: 5px;
+#component2-2 {
+    position: absolute;
+    opacity: 0;
+    top: 5px;
+    left: 5px;
 }
 
-#component3-2{
-  position: absolute;
-  top: 4px;
-  left: 18px;
-  transform: rotate(-90deg);
-  transform-origin: bottom;
+#component3-2 {
+    position: absolute;
+    top: 4px;
+    left: 18px;
+    transform: rotate(-90deg);
+    transform-origin: bottom;
 }
+
 
 /* clock arrow animation */
-.third-page:hover .badge1-2 #component3-2{
-  transform-origin: bottom;
-  animation: rotated2 1.2s forwards;
-  animation-delay: 0.3s;
+
+.third-page:hover .badge1-2 #component3-2 {
+    transform-origin: bottom;
+    animation: rotated2 1.2s forwards;
+    animation-delay: 0.3s;
 }
 
-@keyframes rotated2{
-  100%{
-    transform: rotate(90deg);
-  }
+@keyframes rotated2 {
+    100% {
+        transform: rotate(90deg);
+    }
 }
+
 
 /* clock background */
-.third-page:hover .badge1-2 #component2-2{
-  opacity: 0.5;
-  transition: all 2s ease;
-  transition-delay: 0.3s;
+
+.third-page:hover .badge1-2 #component2-2 {
+    opacity: 0.5;
+    transition: all 2s ease;
+    transition-delay: 0.3s;
 }
+
 
 /* ----- numbers ----- */
-.badge1-2:before{
-  content: '0 1 2 3';
-  position: absolute;
-  color: white;
-  text-align: center;
-  font-size: 28px;
-  line-height: 28px;
-  width: 20px;
-  top: -2px;
-  left: 44px;
+
+.badge1-2:before {
+    content: '0 1 2 3';
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+    width: 20px;
+    top: -2px;
+    left: 44px;
 }
 
-.badge1-2:after{
-  content: '0 1 2 3 4 5 6 7 8 9 0 1';
-  position: absolute;
-  color: #fff;
-  text-align: center;
-  font-size: 28px;
-  line-height: 28px;
-  width: 20px;
-  top: -2px;
-  left: 75px;
+.badge1-2:after {
+    content: '0 1 2 3 4 5 6 7 8 9 0 1';
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+    width: 20px;
+    top: -2px;
+    left: 75px;
 }
+
 
 /* ----- hovers ----- */
-.third-page:hover .badge-one-2, .third-page:hover .badge-two-2, .third-page:hover .badge-three-2 {
-  transform: translateY(-40px);
-  opacity: 1;
+
+.third-page:hover .badge-one-2,
+.third-page:hover .badge-two-2,
+.third-page:hover .badge-three-2 {
+    transform: translateY(-40px);
+    opacity: 1;
 }
 
-.third-page:hover .badge1-2:before{
-  animation: roll2 1s forwards;
-  animation-delay: 0.3s;
+.third-page:hover .badge1-2:before {
+    animation: roll2 1s forwards;
+    animation-delay: 0.3s;
 }
 
-@keyframes roll2{
-  10%{
-    transform: translateY(0);
-  }
-  30%{
-    transform: translateY(-10px);
-  }
-  100%{
-    transform: translateY(-84px);
-  }
+@keyframes roll2 {
+    10% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-84px);
+    }
 }
 
-.third-page:hover .badge1-2:after{
-  animation: roll 1.1s forwards;
-  animation-delay: 0.3s;
+.third-page:hover .badge1-2:after {
+    animation: roll 1.1s forwards;
+    animation-delay: 0.3s;
 }
 
-@keyframes roll{
-  10%{
-    transform: translateY(-10px);
-  }
-  100%{
-    transform: translateY(-308px);
-  }
+@keyframes roll {
+    10% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-308px);
+    }
 }
+
 
 /* ----- bottom box ----- */
+
 .bottom-performance {
-  display: flex;
-  justify-content: center;
-  color: black;
-  margin-top: 30px;
-  transform: translateY(40px);
-  transition: all 1s ease;
-  transition-delay: 0.3s;
-  opacity: 0;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 30px;
+    transform: translateY(40px);
+    transition: all 1s ease;
+    transition-delay: 0.3s;
+    opacity: 0;
 }
 
-.bottom-performance .button-title{
-  flex: 1 0 0;
-  margin-left: 400px;
+.bottom-performance .button-title {
+    flex: 1 0 0;
+    margin-left: 400px;
 }
 
-.button-title .title p{
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 24px;
+.button-title .title p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
 }
 
-.button-title .title h1{
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 36px;
-  color: #111;
+.button-title .title h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #111;
 }
 
-.bottom-performance .paragraph{
-  flex: 2 0 0;
-  margin-right: 350px;
-  margin-left: 100  px;
+.bottom-performance .paragraph {
+    flex: 2 0 0;
+    margin-right: 350px;
+    margin-left: 100 px;
 }
 
-.bottom-performance .paragraph p{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #333;
+.bottom-performance .paragraph p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333;
 }
 
-.performance-buttons{
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
+.performance-buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
-.performance-buttons label{
-  margin: 0 10px;
+.performance-buttons label {
+    margin: 0 10px;
 }
+
 
 /* ----- bottom box transition ----- */
-.third-page:hover .bottom-performance{
-  transform: translateY(0);
-  opacity: 1;
+
+.third-page:hover .bottom-performance {
+    transform: translateY(0);
+    opacity: 1;
 }
+
 
 /* ----- side bar for 3rd page ----- */
-.third-page:hover~.side-nav ul #P-one{
-  border-width: 0.5px;
-  border-color: #888;
-  margin-left: 0;
+
+.third-page:hover~.side-nav ul #P-one {
+    border-width: 0.5px;
+    border-color: #888;
+    margin-left: 0;
 }
 
-.third-page:hover~.side-nav ul #P-two{
-  border-width: 0.5px;
-  border-color: #888;
-  margin-left: 0;
+.third-page:hover~.side-nav ul #P-two {
+    border-width: 0.5px;
+    border-color: #888;
+    margin-left: 0;
 }
-.third-page:hover~.side-nav ul #P-three{
-  border-color: #fff;
-  border-width: 3px;
-  margin-left: -1px;
+
+.third-page:hover~.side-nav ul #P-three {
+    border-color: #fff;
+    border-width: 3px;
+    margin-left: -1px;
 }
